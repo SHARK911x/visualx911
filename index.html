@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VisualX 911 | Professional Media Coverage</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'DM Sans',sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+
+.font-display{
+    font-family:'Playfair Display',serif;
+}
+
+.gold{
+    color:#D4AF37;
+}
+
+.bg-gold{
+    background:#D4AF37;
+}
+
+.card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(212,175,55,.25);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#D4AF37;
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="min-h-screen flex items-center justify-center text-center px-6 relative">
+
+<img src="https://images.pexels.com/photos/3379938/pexels-photo-3379938.jpeg"
+class="absolute inset-0 w-full h-full object-cover opacity-30">
+
+
+<div class="relative z-10">
+
+<div class="w-20 h-20 rounded-full border-2 border-yellow-500 flex items-center justify-center mx-auto mb-6">
+<span class="gold text-2xl font-display">VX</span>
+</div>
+
+
+<h1 class="font-display text-5xl font-bold tracking-widest">
+VISUALX 911
+</h1>
+
+
+<p class="gold text-xl mt-4">
+Professional Media Coverage & Content Creation
+</p>
+
+
+<p class="text-gray-300 mt-4 max-w-xl">
+Cinematic wedding coverage, brand content and social media production.
+</p>
+
+
+<a href="#booking"
+class="inline-block mt-8 bg-gold text-black px-8 py-3 rounded-full font-bold">
+Book Now
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PACKAGES -->
+
+
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+<h2 class="font-display text-3xl gold text-center mb-12">
+Packages
+</h2>
+
+
+<div class="grid md:grid-cols-2 gap-8">
+
+
+<div class="card rounded-2xl p-8">
+
+<h3 class="gold text-xl font-bold">
+Party Coverage
+</h3>
+
+<h4 class="text-3xl font-bold my-5">
+500 EGP
+</h4>
+
+<ul class="space-y-2 text-gray-300">
+
+<li>✦ Video Coverage</li>
+<li>✦ Highlight Reel</li>
+<li>✦ Color Grading</li>
+<li>✦ Social Media Format</li>
+<li>✦ Delivery 24-48 Hours</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card rounded-2xl p-8">
+
+<h3 class="gold text-xl font-bold">
+Full Day Coverage
+</h3>
+
+<h4 class="text-3xl font-bold my-5">
+1000 EGP
+</h4>
+
+<ul class="space-y-2 text-gray-300">
+
+<li>✦ Photo & Video</li>
+<li>✦ Highlight Reel</li>
+<li>✦ Edited Photos</li>
+<li>✦ Cloud Upload</li>
+<li>✦ Raw Files</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- BOOKING -->
+
+
+<section id="booking" class="max-w-4xl mx-auto px-6 py-20">
+
+
+<h2 class="font-display text-3xl gold text-center mb-10">
+Book Your Session
+</h2>
+
+
+<form id="booking-form" class="grid md:grid-cols-2 gap-5">
+
+
+<input id="f-name"
+class="p-3 rounded bg-white/10 border border-yellow-600"
+placeholder="Full Name"
+required>
+
+
+<input id="f-phone"
+class="p-3 rounded bg-white/10 border border-yellow-600"
+placeholder="Phone Number"
+required>
+
+
+<select id="f-package"
+class="p-3 rounded bg-white/10 border border-yellow-600"
+required>
+
+<option value="">Select Package</option>
+<option>Party Coverage - 500 EGP</option>
+<option>Full Day Coverage - 1000 EGP</option>
+
+</select>
+
+
+<input id="f-date"
+type="date"
+class="p-3 rounded bg-white/10 border border-yellow-600"
+required>
+
+
+<input id="f-location"
+class="p-3 rounded bg-white/10 border border-yellow-600"
+placeholder="Location">
+
+
+<textarea id="f-notes"
+class="p-3 rounded bg-white/10 border border-yellow-600 md:col-span-2"
+placeholder="Notes"></textarea>
+
+
+
+<button
+class="bg-gold text-black font-bold py-4 rounded-full md:col-span-2">
+
+Book Now
+
+</button>
+
+
+</form>
+
+
+<p id="success"
+class="hidden text-center gold mt-6">
+✓ Booking Submitted Successfully
+</p>
+
+
+</section>
+
+
+
+
+<footer class="text-center py-10 border-t border-yellow-700">
+
+<p class="gold">
+© VisualX 911
+</p>
+
+<p class="text-gray-500">
+Your Story. Professionally Captured.
+</p>
+
+</footer>
+
+
+
+
+<script>
+
+
+const scriptURL =
+"https://script.google.com/macros/s/AKfycbzTK_YKh9D-GhyNAMxp6fAKKBZFFbikMAgi_qsQGQa0Z_fCTW2O03sX3atVz7jVZ-zMTQ/exec";
+
+
+
+document.getElementById("booking-form")
+.addEventListener("submit", async function(e){
+
+
+e.preventDefault();
+
+
+
+const data={
+
+name:document.getElementById("f-name").value,
+
+phone:document.getElementById("f-phone").value,
+
+package:document.getElementById("f-package").value,
+
+date:document.getElementById("f-date").value,
+
+location:document.getElementById("f-location").value,
+
+notes:document.getElementById("f-notes").value
+
+};
+
+
+
+await fetch(scriptURL,{
+
+method:"POST",
+
+body:JSON.stringify(data),
+
+headers:{
+"Content-Type":"text/plain;charset=utf-8"
+}
+
+});
+
+
+
+document.getElementById("success")
+.classList.remove("hidden");
+
+
+this.reset();
+
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+</html>
